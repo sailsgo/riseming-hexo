@@ -1,7 +1,7 @@
 # Version of the Icarus theme that is currently used
 version: 2.3.0
 # Path or URL to the website's icon
-favicon: /images/favicon.svg
+favicon: /images/logo.svg
 # Path or URL to RSS atom.xml
 rss:
 # Path or URL to the website's logo to be shown on the left of the navigation bar or footer
@@ -65,8 +65,12 @@ search:
 # http://ppoffice.github.io/hexo-theme-icarus/categories/Configuration/Comment-Plugins
 comment:
     # Name of the comment plugin
-    type: disqus
-    shortname: alphalxy-blog
+    type: gitalk
+    owner: sailsgo
+    repo: riseming-hexo
+    client_id: 2882c8b3e0ff1f846f51s
+    client_secret: 7c032be5977d155d2236d6149c716c437d3d9a5e
+    admin: sailsgo
 # Donation entries
 # http://ppoffice.github.io/hexo-theme-icarus/categories/Donation/
 donate:

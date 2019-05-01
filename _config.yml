@@ -3,8 +3,8 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle:
+title: Rise Ming
+subtitle: 寂静之地
 description:
 keywords:
 author: Rise Ming
@@ -13,7 +13,7 @@ timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: http://riseming.cn
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -75,7 +75,9 @@ pagination_dir: page
 ## Themes: https://hexo.io/themes/
 theme: icarus
 
-# Deployment
+# Deployment 将生成的静态文件部署到服务器
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type:
+  type: git
+  repo: git@193.112.111.156:/data/riseming-hexo.git
+  branch: master
