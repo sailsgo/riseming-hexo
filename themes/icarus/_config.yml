@@ -27,6 +27,7 @@ navbar:
         Archives: /archives/
         Categories: /categories/
         Tags: /tags/
+        摄影: /categories/travel/
         About: /about/
     # Navigation bar links to be shown on the right
     links:
@@ -67,9 +68,9 @@ comment:
     # Name of the comment plugin
     type: gitalk
     owner: sailsgo
-    repo: riseming-hexo
-    client_id: 2882c8b3e0ff1f846f51s
-    client_secret: 7c032be5977d155d2236d6149c716c437d3d9a5e
+    repo: hexo-gittalk
+    client_id: 3f9385415cfac4d64016
+    client_secret: fe5af32e7a1a3da1b3f64096c1f87065e524705e
     admin: sailsgo
 # Donation entries
 # http://ppoffice.github.io/hexo-theme-icarus/categories/Donation/
