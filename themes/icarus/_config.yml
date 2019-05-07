@@ -101,7 +101,9 @@ donate:
 # http://ppoffice.github.io/hexo-theme-icarus/categories/Configuration/Share-Plugins
 share:
     # Share plugin name
-    type:
+    type: sharejs
+    sites: ['qq', 'weibo','wechat', 'douban']
+    disabled: ['google', 'facebook', 'twitter', 'qzone']
 # Sidebar settings.
 # Please be noted that a sidebar is only visible when it has at least one widget
 sidebar:
