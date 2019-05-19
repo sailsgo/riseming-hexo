@@ -240,3 +240,9 @@ providers:
     fontcdn: google
     # Name or URL of the webfont Icon CDN provider
     iconcdn: fontawesome
+index_generator:
+  path: ''
+  per_page: 10
+  order_by:
+    top: -1
+    date: -1
