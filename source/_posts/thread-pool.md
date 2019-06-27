@@ -26,10 +26,10 @@ public ThreadPoolExecutor(int corePoolSize,
 > 核心线程：线程池新建线程的时候，如果当前线程总数小于corePoolSize，则新建的是核心线程，如果超过corePoolSize，则新建的是非核心线程核心线程默认情况下会一直存活在线程池中，即使这个核心线程啥也不干(闲置状态)。  
 如果指定ThreadPoolExecutor的allowCoreThreadTimeOut这个属性为true，那么核心线程如果不干活(闲置状态)的话，超过一定时间(时长下面参数决定)，就会被销毁掉
 
-* `int maximumPoolSize`：**该线程池中**线程总数最大值**
+* `int maximumPoolSize`：**该线程池中线程总数最大值**
 
 > 线程总数 = 核心线程数 + 非核心线程数。  
-* **long keepAliveTime：**该线程池中**非核心线程闲置超时时长**
+* **long keepAliveTime**：该线程池中 **非核心线程闲置超时时长**
 
 > 一个非核心线程，如果不干活(闲置状态)的时长超过这个参数所设定的时长，就会被销毁掉，如果设置`allowCoreThreadTimeOut = true`，则会作用于核心线程  
 * **TimeUnit unit：**keepAliveTime的单位
