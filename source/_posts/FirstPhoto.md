@@ -1,9 +1,8 @@
 ---
-title: 初识摄影
-date: 2019-04-21 21:04:00
-tags: [travel]
-categories: [travel]
-top: 1
+title: 线程池
+date: 2019-06-20 20:13:00
+tags: [Executor,线程池]
+categories: [线程池]
 ---
 <div class="justified-gallery">
 ![西湾红树湾公园日落](http://content.riseming.cn/IMG_0211.jpg)
