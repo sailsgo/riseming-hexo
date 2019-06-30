@@ -27,7 +27,7 @@ navbar:
         Archives: /archives/
         Categories: /categories/
         Tags: /tags/
-        摄影: /categories/travel/
+        摄影: /photo/
         About: /about/
     # Navigation bar links to be shown on the right
     links:
@@ -57,6 +57,7 @@ article:
     thumbnail: true
     # Whether to show estimate article reading time
     readtime: true
+    random_recent_thubnail: true
 # Search plugin settings
 # http://ppoffice.github.io/hexo-theme-icarus/categories/Configuration/Search-Plugins
 search:
@@ -116,7 +117,7 @@ sidebar:
     right:
         # Whether the right sidebar is sticky when page scrolls
         # http://ppoffice.github.io/hexo-theme-icarus/Configuration/Theme/make-a-sidebar-sticky-when-page-scrolls/
-        sticky: false
+        sticky: true
 # Sidebar widget settings
 # http://ppoffice.github.io/hexo-theme-icarus/categories/Widgets/
 widgets:

@@ -6,10 +6,10 @@
         </h3>
         <% site.posts.sort('date', -1).limit(5).each(post => { %>
         <article class="media">
-            <% if (!has_config('article.thumbnail') || get_config('article.thumbnail') !== false) { %>
+            <% if (!has_config('article.random_recent_thubnail') || get_config('article.random_recent_thubnail') !== false) { %>
             <a href="<%- url_for((post.link?post.link:post.path)) %>" class="media-left">
                 <p class="image is-64x64">
-                    <img class="thumbnail" src="<%= get_thumbnail(post) %>" alt="<%= post.title %>">
+                    <img class="thumbnail" src="<%= get_random_recent_thumbnail(post) %>" alt="<%= post.title %>">
                 </p>
             </a>
             <% } %>
