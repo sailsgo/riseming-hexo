@@ -27,7 +27,7 @@ navbar:
         Archives: /archives/
         Categories: /categories/
         Tags: /tags/
-        摄影: /photo/
+        摄影: /categories/travel/
         About: /about/
     # Navigation bar links to be shown on the right
     links:

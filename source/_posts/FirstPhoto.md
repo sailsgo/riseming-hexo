@@ -3,7 +3,6 @@ title: 初识摄影
 date: 2019-04-21 21:04:00
 tags: [travel]
 categories: [travel]
-thumbnail: http://content.riseming.cn/IMG_0385.jpg
 top: 1
 ---
 <div class="justified-gallery">
