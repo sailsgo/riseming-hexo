@@ -52,7 +52,7 @@ footer:
 article:
     # Code highlight theme
     # https://github.com/highlightjs/highlight.js/tree/master/src/styles
-    highlight: github-gist
+    highlight: atom-one-dark
     # Whether to show article thumbnail images
     thumbnail: true
     # Whether to show estimate article reading time
@@ -70,8 +70,8 @@ comment:
     type: gitalk
     owner: sailsgo
     repo: hexo-gittalk
-    client_id: 3f9385415cfac4d64016
-    client_secret: fe5af32e7a1a3da1b3f64096c1f87065e524705e
+    client_id: 40bd186b971f284d9de0
+    client_secret: 025d0804cccec7655e68cc29ce1fc62be5eeaa42
     admin: sailsgo
 # Donation entries
 # http://ppoffice.github.io/hexo-theme-icarus/categories/Donation/
