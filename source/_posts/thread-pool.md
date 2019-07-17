@@ -1,11 +1,13 @@
----
 title: 线程池
 tags:
   - Executor
   - 线程池
 categories:
   - 线程池
+<<<<<<< HEAD
 abbrlink: 227
+=======
+>>>>>>> 28a247dadc1e4e8f75a2b97670574ad269bc05e3
 date: 2019-06-20 20:13:00
 ---
 ## 为什么使用线程池
@@ -166,6 +168,7 @@ shutDownNow()
 ```Java
 shutdown()
 ```
+
 - - - -
 ## 如何配置线程
 - IO 密集型任务：由于线程并不是一直在运行，所以可以尽可能的多配置线程，比如 CPU 个数 * 2

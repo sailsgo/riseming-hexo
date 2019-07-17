@@ -1,11 +1,9 @@
----
 title: 负载均衡和反向代理
 tags:
   - 负载均衡
   - 反向代理
 categories:
   - 负载均衡
-abbrlink: 34786
 date: 2019-05-01 01:00:00
 ---
 # 负载均衡和反向代理
@@ -42,3 +40,5 @@ date: 2019-05-01 01:00:00
 
 ### Consul + OpenResty
 - 使用Consul注册服务之后，使用OpenResty banlance_by_lua 实现无reload 动态负载均衡
+
+

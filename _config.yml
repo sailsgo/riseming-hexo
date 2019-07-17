@@ -82,3 +82,10 @@ deploy:
   type: git
   repo: git@193.112.111.156:/data/riseming-hexo.git
   branch: master
+admin:
+  qiniuCfg:
+      imageslim: true  # 启动图片瘦身，仅华东区bucket可以使用
+      AccessKey: 'nq9HagSBXcO6jkot8EiDbEI5EQ3mabhQYRDrBPc3'
+      SecretKey: 'XWWcA2SmjQ_B9Qx1WID-j2ZFzz2C5fQg1Y6AT-NK'
+      BucketName: 'hexo-admin'
+      bucketHost: 'image.riseming.cn'
