@@ -1,9 +1,12 @@
 ---
 title: 限流算法
+tags:
+  - 限流
+  - 分布式
+categories:
+  - 限流
+abbrlink: 62837
 date: 2019-05-01 01:00:00
-tags: [限流,分布式]
-categories: [限流]
-
 ---
 # 限流详解
 ## 限流算法

@@ -1,8 +1,12 @@
 ---
 title: 线程池
+tags:
+  - Executor
+  - 线程池
+categories:
+  - 线程池
+abbrlink: 227
 date: 2019-06-20 20:13:00
-tags: [Executor,线程池]
-categories: [线程池]
 ---
 ## 为什么使用线程池
 - 创建/销毁线程伴随着系统开销，过于频繁的创建/销毁线程，会很大程度上影响处-理效率

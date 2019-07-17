@@ -1,8 +1,11 @@
 ---
 title: Redis 的持久化机制--RDB和AOF
+tags:
+  - Redis
+categories:
+  - Redis
+abbrlink: 4314
 date: 2019-05-19 20:56:00
-tags: [Redis]
-categories: [Redis]
 ---
 # Redis 的持久化机制—RDB和AOF
 Redis 的数据全部在内存里，如果突然宕机，数据就会全部丢失，因此必须有一种机制来保证 Redis 的数据不会因为故障而丢失，这种机制就是 Redis 的持久化机制，Redis提供了两种持久化的方式

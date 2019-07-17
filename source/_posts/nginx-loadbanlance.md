@@ -1,8 +1,12 @@
 ---
 title: 负载均衡和反向代理
+tags:
+  - 负载均衡
+  - 反向代理
+categories:
+  - 负载均衡
+abbrlink: 34786
 date: 2019-05-01 01:00:00
-tags: [负载均衡,反向代理]
-categories: [负载均衡]
 ---
 # 负载均衡和反向代理
 ## upstream 配置
