@@ -29,10 +29,12 @@ date: 2019-05-01 01:00:00
 - **Fanout交换机**：它采取广播模式，消息进来时，将会被投递到与改交换机绑定的所有队列中
 
 ---
-## **rabbitMQ连接池**实现
+## **rabbitMQ连接池实现**
 > - 对于connection，channel对象创建时间长，创建时需要消耗大量的资源，且对象创建后可被重复使用，如同数据库库连接池一样，当我们的业务并发量很大的时候，频繁的创建，关闭连接是一项非常损耗系统资源的操作，我们需要将这些对象缓存起来以便重复利用，减少系统开销，提升系统性能。
-- RabbitMQ的指令都是通过channel的来实现的，且channel是可以复用的，所以该对象池中存储的也是channel对象。
-### 获取配置信息
+- RabbitMQ的指令都是通过channel的来实现的，**<span style="color:#FF4040"> channel是可以复用的 </span>**，`所以该对象池中也是基于channel对象`。
+### 配置信息类
+> 配置rabbit连接属性，已经连接池中的对象数信息，更具业务的量来确定
+
 ```Java
 public class RabbitMqConfig {
     /**
@@ -179,7 +181,9 @@ public class RabbitMqChannelFactory extends BasePooledObjectFactory<Channel> {
 
 ```
 
-`create()`核心方法，表明我们对象池中的对象是如何创建的。
+**<span style="color:#FF4040"> create()</span> ** 核心方法，表明我们对象池中的对象是如何创建的。
+
+**<span style="color:#FF4040">init()</span> ** 类加载的时候创建rabbitMQ的connection对象,后续初始化对象池的是能，才能通过connection创建channel对象
 
 ### 构建rabbit channel pool
 ```Java
@@ -210,7 +214,13 @@ public void initPool(){
 
 > 构建`GenericObjectPoolConfig`对象配置我们的参数，然后创建RabbitChannelPool对象，我们就可以直接通过RabbitChannelPool对象来池中获取和归还channel对象了。  
 
+> 如果对 Apache Commons Pool对象池还不是很了解的话，可以看一下这篇文章  [探索对象池](http://kriszhang.com/object-pool/)
+
 ### 封装rabbitMqService 服务提供消息的发送和监听
+> `initPool()` 初始化时构建好rabbitChannelPool对象，后续就可以使用了rabbitChannelPool来获取对象
+类中提供了一个发送的示例方法和一个监听消息的实例方法
+
+**<span style="color:#FF4040">注:使用过程中一定要在finally块中归还对象，否则对象池将被耗尽无法提供服务</span> **
 
 ```Java
 @Service("rabbitMqService")
@@ -286,6 +296,5 @@ public class RabbitMqServiceImpl implements RabbitMqService{
         }
     }
 }
-
 ```
-
+### 总结
