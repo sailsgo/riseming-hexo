@@ -1,5 +1,5 @@
 ---
-title: Elasticsearch优化
+title: Elasticsearch优化实践
 tags:
   - Elasticsearch
 categories:
@@ -7,3 +7,4 @@ categories:
 abbrlink: 4314
 date: 2019-05-19 20:56:00
 ---
+## 选择合适的分片数
